@@ -1,9 +1,7 @@
 function PromptDemo() {
 
-    var entrada = prompt("¿Cuál es tu servicio?", "");
-    var valorServicio = parseInt(prompt("¿Cuál es su valor sin impuestos?","")); 
-
-    
+    var entrada = prompt("¿Cuál es tu servicio?");
+    var valorServicio = parseInt(prompt("¿Cuál es su valor sin impuestos?")); 
 
     const iva  = x => x * 0.21;
     let precioIva = iva(valorServicio);
@@ -16,7 +14,7 @@ function PromptDemo() {
 
     let resultado = suma (precioIva, precioPais, precioGanancias, valorServicio);
 
-    if (entrada == spotify1) {
+    if (entrada == "Spotify Individual") {
         alert ("El valor del impuesto IVA de" + entrada + "es" + " " + "$" + precioIva);
         alert ("El valor del impuesto Pais de" + entrada + "es" + " " + "$" + precioPais);
         alert ("El valor del impuesto Ganancias de" + entrada + "es" + " " + "$" + precioGanancias);
@@ -30,6 +28,4 @@ function PromptDemo() {
     }
 
 } 
-
-var spotify1 = ("Spotify Individual");
 
