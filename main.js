@@ -12,13 +12,13 @@ function PromptDemo() {
     const ganancias = x => x * 0.35;
     let precioGanancias = ganancias(valorServicio);
 
-    let resultado = suma (precioIva, precioPais, precioGanancias, valorServicio);
+    let resultado = (precioIva + precioPais + precioGanancias + valorServicio);
 
     if (entrada == "Spotify Individual") {
-        alert ("El valor del impuesto IVA de" + entrada + "es" + " " + "$" + precioIva);
-        alert ("El valor del impuesto Pais de" + entrada + "es" + " " + "$" + precioPais);
-        alert ("El valor del impuesto Ganancias de" + entrada + "es" + " " + "$" + precioGanancias);
-        alert ("El valor final de" + entrada + "es de" + " " + "$" + resultado);
+        alert ("El valor del impuesto IVA de" + " " + entrada + " " + "es" + " " + "$" + precioIva);
+        alert ("El valor del impuesto Pais de" + " " + entrada + " " + "es" + " " + "$" + precioPais);
+        alert ("El valor del impuesto Ganancias de" + " " + entrada + " " + "es" + " " + "$" + precioGanancias);
+        alert ("El valor final de" + " " + entrada + " " + "es de" + " " + "$" + resultado);
     }
 
     else  {
